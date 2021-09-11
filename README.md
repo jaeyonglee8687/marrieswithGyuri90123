@@ -1,2 +1,3 @@
 # marrieswithGyuri90123
-test
+이재용 & 강규리 결혼합니다.
+
