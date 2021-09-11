@@ -203,20 +203,21 @@ img {
   text-align: center;
   font-weight: normal;
   font-style: normal;
-  color: #000000;
+  color: #272727;
   margin: 0;
   letter-spacing: 2px;
 }
 .post-heading_1 {
   font-family: "Gowun Batang", serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   font-style: normal;
   color: #272727;
+  margin-bottom: 12px;
 }
 .post-2 {
   font-family: "Gowun Batang", serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   font-style: normal;
   color: #272727;
@@ -226,7 +227,7 @@ img {
 .post-contents {
   font-family: "Gowun Batang", serif;
   color: #272727;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   font-style: normal;
   margin: 0;
@@ -239,7 +240,7 @@ img {
 .post-contents_2 {
   font-family: "Gowun Batang", serif;
   color: #272727;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
   margin: 0;
