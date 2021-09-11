@@ -98,8 +98,8 @@
 
 @media only screen and (max-width: 720px){
   .grid-container {
-    grid-gap: 16px;
-    padding: 0 16px;
+    grid-gap: 24px;
+    padding: 0 24px;
   }
 }
 
@@ -163,7 +163,8 @@ h1,h2,h3,h4,h5 {
  margin-top: 0px !important;
 }
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: #272727 !important;
   outline:0;
 }
 a:hover {
@@ -184,12 +185,6 @@ img {
   display: block;
 }
 
-p {
-  margin-bottom: 30px;
-}
-p.post-contents {
-  margin-bottom: 56px;
-}
 
 .bold {
   font-weight: 800 !important;
@@ -200,9 +195,7 @@ p.post-contents {
 .white {
   color: #FFFFFF !important;
 }
-.left {
-  text-align: left !important;
-}
+
 .post-heading {
   font-family: 'Gowun Batang', serif;
   writing-mode: vertical-rl;
@@ -212,74 +205,45 @@ p.post-contents {
   font-style: normal;
   color: #000000;
   margin: 0;
-  letter-spacing: 0.8px;
-  line-height: 1.2;
+  letter-spacing: 2px;
 }
-.post-heading_2 {
-  font-family: "Gowun Batang", serif;
-  font-size: 18px;
-  font-weight: 300;
-  font-style: normal;
-  margin: 0 0 20px 0;
-  color: #303034;
-}
-
-.post-sub-heading_1 {
+.post-heading_1 {
   font-family: "Gowun Batang", serif;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 700;
   font-style: normal;
-  margin: 0 0 20px 0;
-  color: #303034;
+  color: #272727;
 }
-.post-sub-heading_2 {
-  font-family: "Gowun Batang", times, serif;
-  font-weight: 300;
+.post-2 {
+  font-family: "Gowun Batang", serif;
   font-size: 18px;
-  color: #303034;
-  margin: 0;
+  font-weight: 700;
   font-style: normal;
-}
-.post-sub-heading_3 {
-  font-family: "Gowun Batang", serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: #303034;
-  margin:0;
-}
-.post-sub-heading_4 {
-  font-family: "Gowun Batang", serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: #303034;
-  margin:0;
-}
-.post-sub-heading-link {
-  font-family: "Gowun Batang", times, serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: #8A8A8D;
-  margin: 0;
-  font-style: normal;
-  text-decoration: underline;
-}
-.post-contents {
-  font-family: "Gowun Batang", serif;
-  color: #636367;
-  font-size: 16px;
-  font-weight: 300;
-  font-style: normal;
-  margin: 0;
-  line-height: 1.4;
+  color: #272727;
+  text-align: left;
 }
 
-.post-contents_2 {
+.post-contents {
   font-family: "Gowun Batang", serif;
-  color: #D8D8D9;
-  font-size: 14px;
-  font-weight: 300;
+  color: #272727;
+  font-size: 20px;
+  font-weight: 400;
   font-style: normal;
   margin: 0;
+  text-align: center;
+}
+
+.lineheight {
+  line-height: 2.6;
+}
+.post-contents_2 {
+  font-family: "Gowun Batang", serif;
+  color: #272727;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  text-align: left;
 }
 
 .post-contents_link {
@@ -1119,7 +1083,6 @@ a h5.post-contents:hover {text-decoration: underline;
 /* For tablets */
 @media only screen and (min-width: 600px) {
   /* Font-size */
-  .post-heading {font-size: 55px;}
   .post-sub-heading_1 {font-size: 20px;}
   .post-sub-heading_2,
   .post-sub-heading-link {font-size: 18px;}
@@ -1219,8 +1182,6 @@ a h5.post-contents:hover {text-decoration: underline;
     font-size: 14px;
   }
   /* Font-size */
-  .post-heading {font-size: 56px;
-  }
   .post-sub-heading_1 {font-size: 20px;
   }
   .post-sub-heading_2,
@@ -1253,9 +1214,6 @@ a h5.post-contents:hover {text-decoration: underline;
     margin: 0;
     text-align: left;
     width: 350px;
-  }
-  p {
-    margin-bottom: 30px;
   }
 
   /*button*/
@@ -1488,7 +1446,7 @@ div.tab button.active {
 /* 3. ABOUT - about.html */
 .aboutme {
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 .aboutme-contents {
@@ -1515,7 +1473,6 @@ div.aboutme-contents h4.post-sub-heading_2 a {
 }
 div.aboutme-contents p.post-contents {
   color: #666666;
-  margin-bottom: 20px;
 }
 .aboutme-buttons {
   margin: 24px 0 80px 0;
@@ -2385,20 +2342,30 @@ img.demo {
 }
 
 /*청첩장*/
-.name {
-  width: 100%;
-  height: 100vh;
-  text-orientation: upright;
+.wrapper_1 {
+  border: 3px solid green;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.image {
+  margin-bottom: 80px;
 }
 .left {
-  box-sizing: border-box;
   width: 50%;
+  box-sizing: border-box;
   float: left;
-  text-align: right !important;
+  display: flex;
+  justify-content: flex-end;
 }
+
 .right {
-  text-align: left;
-overflow: hidden;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
 }
 .fullWidth {
   width: auto;
@@ -2407,5 +2374,42 @@ overflow: hidden;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+}
+
+.invitation {
+  margin-bottom: 188px;
+}
+.card-contents {
+  margin: auto;
+  text-align: center;
+}
+
+.detail {
+  width: 100%;
+}
+
+table td, table td * {
+  vertical-align: top;
+}
+
+p {
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.time, .location {
+  margin-bottom: 60px;
+}
+.gift {
+  margin-bottom: 40px;
+}
+.map {
+  margin: 20px 0 20px 0;
+}
+
+#lable {
+  line-height: 2.6;
 }
